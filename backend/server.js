@@ -3,6 +3,7 @@ import env from "dotenv"
 import taskRouter from "./routes/taskRoutes.js"
 import userRouter from "./routes/userRoutes.js"
 import mongoose from "mongoose"
+import cors from 'cors'
 
 // Express App
 const app = express()
@@ -10,6 +11,7 @@ const app = express()
 env.config()
 
 // Middleware
+app.use(cors())
 app.use(express.json());
 
 app.use((req, res, next) => {
