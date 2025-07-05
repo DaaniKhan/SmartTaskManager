@@ -1,0 +1,135 @@
+header {
+  background: var(--surface);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  margin: 0;
+  color: var(--secondary);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.user-section {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn,
+.signup-btn,
+.logout-btn {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  box-sizing: border-box;
+  transition: 
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-btn {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 8px 16px;
+}
+
+.signup-btn,
+.logout-btn {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.login-btn:hover,
+.signup-btn:hover,
+.logout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-hover);
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.material-symbols-rounded {
+  font-size: 32px;
+  color: var(--secondary);
+}
+
+.user-email {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  background-color: #FEF3C7;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  .user-section {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .user-section .login-btn,
+  .user-section .signup-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
