@@ -38,7 +38,7 @@ const Landing = () => {
             <span className="material-symbols-rounded feature-icon">sync_alt</span>
             <h3 className="feature-title">Cross-Device Sync</h3>
             <p className="feature-desc">
-              Seamlessly manage tasks across devices with optional real-time sync.
+              Seamlessly manage tasks across devices.
             </p>
           </div>
         </div>
