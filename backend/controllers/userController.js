@@ -1,5 +1,4 @@
 import User from '../models/userModel.js'
-import mongoose from 'mongoose'
 import jwt from 'jsonwebtoken'
 
 const createToken = (_id) => {
