@@ -129,10 +129,10 @@ npm test
 ---
 
 ## Future Improvements
-🔔 Real-time deadline notifications
-📊 Analytics dashboard (e.g., completed vs. overdue tasks)   
-🔐 OAuth (Google, GitHub) login options  
-📁 Task attachments (images, documents, links)    
-📅 Calendar view for task deadlines  
-📂 Archive or soft-delete functionality 
-✅ Comprehensive unit and integration tests 
+1. Real-time deadline notifications
+2. Analytics dashboard (e.g., completed vs. overdue tasks)   
+3. OAuth (Google) login options  
+4. Task attachments (images, documents, links)    
+5. Calendar view for task deadlines  
+6. Archive or soft-delete functionality 
+7. Comprehensive unit and integration tests 
