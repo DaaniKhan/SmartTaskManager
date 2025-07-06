@@ -4,7 +4,7 @@ import { useTasksContext } from "../hooks/useTaskContext"
 import { BASE_URL } from "../components/BaseURL"
 import { formatDistanceToNow } from "date-fns"
 import axios from "axios"
-import TaskForm from "../components/taskForm"
+import TaskForm from "../components/TaskForm"
 import TaskDetails from "../components/TaskDetails"
 import "../styles/Home.css"
 

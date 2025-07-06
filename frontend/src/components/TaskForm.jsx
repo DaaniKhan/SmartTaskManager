@@ -77,8 +77,9 @@ const TaskForm = () => {
     <form className="task-form" onSubmit={handleSubmit}>
         <h2>Create a Task</h2>
 
-        <label>Task</label>
+        <label htmlFor="task">Task</label>
         <input
+            id="task"
             type="text"
             required
             value={task}
@@ -86,8 +87,9 @@ const TaskForm = () => {
             placeholder="e.g., Do homework"
         />
 
-        <label>Category</label>
+        <label htmlFor="category">Category</label>
         <select
+            id="category"
             required
             value={category}
             onChange={(e) => setCategory(e.target.value)}
@@ -99,17 +101,24 @@ const TaskForm = () => {
             <option value="Other">Other</option>
         </select>
 
-        <label>Additional Info</label>
+        <label htmlFor="information">Additional Info</label>
         <textarea
+            id="information"
             value={information}
-            onChange={(e) => setInformation(e.target.value)}
+            
+            onChange={(e) => {
+              if (e.target.value.length <= infoCharLimit) {
+                setInformation(e.target.value);
+              }
+            }}
             maxLength={infoCharLimit}
             placeholder="Optional notes or description"
         />
         <p className="char-count">{information.length}/{infoCharLimit} characters</p>
 
-        <label>Deadline</label>
+        <label htmlFor="deadline">Deadline</label>
         <input
+            id="deadline"
             type="datetime-local"
             required
             min={new Date().toISOString().slice(0, 16)} 
