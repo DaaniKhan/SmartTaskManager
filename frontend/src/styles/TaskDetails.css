@@ -49,7 +49,11 @@
 .task-info {
   font-size: 0.95rem;
   color: var(--text-primary);
+  white-space: pre-wrap;    
+  word-wrap: break-word;       
+  overflow-wrap: break-word;  
 }
+
 
 .task-deadline {
   font-size: 0.85rem;
