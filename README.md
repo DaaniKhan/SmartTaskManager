@@ -16,11 +16,10 @@ A full-stack productivity web app built to help users manage and categorize thei
 - [Usage Guide](#usage-guide)
 - [Assumptions](#assumptions)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 
 ---
 
-## ✅ Features
+## Features
 
 - Add, update, and delete tasks
 - Assign deadlines and track how long until they are due
@@ -35,9 +34,9 @@ A full-stack productivity web app built to help users manage and categorize thei
 
 ---
 
-## 🧱 Architecture & Design
+## Architecture & Design
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 | Layer          | Technology                 |
 |----------------|----------------------------|
@@ -63,17 +62,17 @@ A full-stack productivity web app built to help users manage and categorize thei
 
 ### Architecture Diagram
 
-[Architecure](images/ArchitectureDiagram-SmartTaskManager.png)
+![Architecure](images/ArchitectureDiagram-SmartTaskManager.png)
 
 ### Database Schema
 
-[DB_Schema](images/DB-Schema-SmartTaskManager.png)
+![DB_Schema](images/DB-Schema-SmartTaskManager.png)
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
-### 🔧 Backend Setup
+### Backend Setup
 
 1. Navigate to the backend folder:
 ```bash
