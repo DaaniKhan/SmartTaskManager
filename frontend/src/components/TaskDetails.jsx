@@ -163,7 +163,10 @@ const TaskDetails = ({ task }) => {
 
           <p className="task-deadline">
             <span className="material-symbols-rounded">event</span>
-            Due {formatDistanceToNow(new Date(task.deadline), { addSuffix: true })}, {new Date(task.deadline).toLocaleDateString('en-GB')}
+            Due {formatDistanceToNow(new Date(task.deadline), { addSuffix: true })}, {new Date(task.deadline).toLocaleString('en-GB', {
+              dateStyle: 'medium',
+              timeStyle: 'short',
+            })}
           </p>
 
           <p className={`task-status ${task.completed ? 'done' : 'pending'}`}>
