@@ -131,7 +131,7 @@ npm test
 ## Future Improvements
 1. Real-time deadline notifications
 2. Analytics dashboard (e.g., completed vs. overdue tasks)   
-3. OAuth (Google) login options  
+3. OAuth (Google) login option  
 4. Task attachments (images, documents, links)    
 5. Calendar view for task deadlines  
 6. Archive or soft-delete functionality 
