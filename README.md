@@ -5,7 +5,7 @@ A full-stack productivity web app built to help users manage and categorize thei
 ---
 
 ## Table of Contents
-
+- [Preview](#preview)
 - [Features](#features)
 - [Architecture & Design](#architecture--design)
   - [Tech Stack](#tech-stack)
@@ -16,6 +16,14 @@ A full-stack productivity web app built to help users manage and categorize thei
 - [Usage Guide](#usage-guide)
 - [Assumptions](#assumptions)
 - [Future Improvements](#future-improvements)
+
+---
+
+## Preview
+
+![Landing](images/Landing-SmartTaskManager.png)
+![Login](images/Login-SmartTaskManager.png)
+![home](images/Home-SmartTaskManager.png.png)
 
 ---
 
