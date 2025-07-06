@@ -25,14 +25,20 @@ app.use('/api/tasks', taskRouter)
 
 const PORT = process.env.PORT || 3001
 
-// DB Connection
-mongoose.connect(process.env.MONGO_URI)
-.then(() => {
-    app.listen(PORT, () => {
+// Export app for testing
+export default app;
+
+// Start server only if not in test mode
+if (process.env.NODE_ENV !== "test") {
+  const PORT = process.env.PORT || 3001;
+  mongoose
+    .connect(process.env.MONGO_URI)
+    .then(() => {
+      app.listen(PORT, () =>
         console.log(`listening on http://localhost:${PORT}`)
-    }
-)
-})
-.catch((error) => {
-    console.log(error)
-})
+      );
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}

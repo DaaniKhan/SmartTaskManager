@@ -1,7 +1,14 @@
 import jwt from 'jsonwebtoken'
 import User from '../models/userModel.js'
+import mongoose from 'mongoose'
 
 const requireAuth = async (req, res, next) => {
+    if (process.env.NODE_ENV === "test") {
+        // Fake user for test environment
+        req.user = { _id: new mongoose.Types.ObjectId(process.env.TEST_USER_ID) }
+        return next()
+    }
+
     // Authentication Verification
     const { authorization } = req.headers
 
