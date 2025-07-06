@@ -23,7 +23,7 @@ A full-stack productivity web app built to help users manage and categorize thei
 
 ![Landing](images/Landing-SmartTaskManager.png)
 ![Login](images/Login-SmartTaskManager.png)
-![home](images/Home-SmartTaskManager.png.png)
+![home](images/Home-SmartTaskManager.png)
 
 ---
 
